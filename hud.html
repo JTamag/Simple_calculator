@@ -4,6 +4,35 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Simple Calculator</title>
-        <link rel="stylesheet" href="hud.css">
+        <link rel="stylesheet" href="interface.css">
     </head>
+    <body>
+        <div id="calculator">
+            <input id="display" readonly>
+            <div id="buttons">
+                <button class="btn" onclick="appendToDisplay('7')">7</button>
+                <button class="btn" onclick="appendToDisplay('8')">8</button>
+                <button class="btn" onclick="appendToDisplay('9')">9</button>
+                <button class="btn_operator" onclick="appendToDisplay('+')">+</button>
+                
+                <button class="btn" onclick="appendToDisplay('4')">4</button>
+                <button class="btn" onclick="appendToDisplay('5')">5</button>
+                <button class="btn" onclick="appendToDisplay('6')">6</button>
+                <button class="btn_operator" onclick="appendToDisplay('-')">-</button>
+                
+                <button class="btn" onclick="appendToDisplay('1')">1</button>
+                <button class="btn" onclick="appendToDisplay('2')">2</button>
+                <button class="btn" onclick="appendToDisplay('3')">3</button>
+                <button class="btn_operator" onclick="appendToDisplay('*')">*</button>
+                
+                <button class="btn zero" onclick="appendToDisplay('0')">0</button>
+                <button class="btn" onclick="appendToDisplay('.')">.</button>
+                <button class="equal_sign" onclick="calculateResult()">=</button>            
+                <button class="btn_operator" onclick="appendToDisplay('/')">/</button>
+
+                <button class="btn_operator" onclick="clearDisplay()">C</button>
+            </div>
+        </div>
+        <script src="code.js"></script>
+    </body>
 </html>
