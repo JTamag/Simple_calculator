@@ -15,3 +15,6 @@ function calculateResult() {
         display.value = "Error";
     }
 }
+function Deletechar() {
+    display.value = display.value.slice(0, -1);
+}
